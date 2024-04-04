@@ -1,0 +1,15 @@
+# create simple build pipeline for azure devops
+
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - script: echo Hello, World!
+    displayName: 'Print Hello, World!'
+
+
